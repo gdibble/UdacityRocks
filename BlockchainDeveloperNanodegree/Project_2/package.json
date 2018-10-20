@@ -1,0 +1,15 @@
+{
+  "name": "project_2.privateBlockchain",
+  "version": "1.1.0",
+  "description": "Udacity rocks!",
+  "main": "privateChain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Dibble (gdibble@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "level": "^4.0.0"
+  }
+}
