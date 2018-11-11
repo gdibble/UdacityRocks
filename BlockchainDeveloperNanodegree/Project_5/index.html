@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Notary</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Star Notary Service</h1>
+      <div class="row hidden">
+        <label class="bold">Star Name:</label>
+        <label id="star-name"></label>
+      </div>
+      <div class="row">
+        <label class="bold">Star Owner:</label>
+        <label id="star-owner"></label>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Create Star</h2>
+      <div class="row">
+        <label id="createStarResult"></label><br>
+        Name: <input type="text" id="idStarName" /><br>
+        Dec: <input type="text" id="idStarDec" /><br>
+        Mag: <input type="text" id="idStarMag" /><br>
+        RA: <input type="text" id="createStarRA" /><br>
+        Story: <input type="text" id="idStarStory" /><br>
+        Token Id: <input type="text" id="idTokenId" /><br>
+        <button id="create-button" onclick="createButtonClicked()">Create Star</button>
+        <button id="claim-button" onclick="claimButtonClicked()">Claim Star</button>
+        <button id="lookup-button" onclick="lookupButtonClicked()">Lookup Star by Id</button>
+      </div>
+      <div id="response-container" class="row hidden">
+        <label class="bold">Response:</label>
+        <label id="response"></label>
+      </div>
+    </div>
+
+    <script src="contract_abi.js" type="text/javascript"></script>
+    <script src="service.js" type="text/javascript"></script>
+  </body>
+</html>
