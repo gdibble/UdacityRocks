@@ -5,7 +5,7 @@
  *
  * @requires hapi
  */
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 const config = require('./config');
 
 // Setup Private Blockchain API server
